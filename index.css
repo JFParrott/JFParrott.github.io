@@ -5,6 +5,7 @@ html {
   height: 400vh;
   margin: 0px;
   padding: 0px;
+  background-color: #000;
 }
 
 #container {
@@ -19,14 +20,15 @@ html {
 }
 
 #landing-page {
-  background: #000;
   grid-area: landing-page;
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  border-bottom: 1px solid #4d4d4d;
 }
 
 #starfield > * {
@@ -79,7 +81,28 @@ html {
 }
 
 #intro {
+  font-family: 'Space Mono';
+  text-align: center;
   color: white;
+}
+
+.social {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+a {
+  cursor: pointer;
+  margin: 5px;
+  color: white;
+  z-index: 1;
 }
 
 #about {
