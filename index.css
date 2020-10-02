@@ -1,0 +1,120 @@
+body,
+html {
+  display: grid;
+  width: 100vw;
+  height: 400vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    'landing-page'
+    'about'
+    'projects'
+    'contact';
+  border: 0px;
+}
+
+#landing-page {
+  background: #000;
+  grid-area: landing-page;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#starfield > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  transform-origin: 50% 50%;
+
+  background-image: radial-gradient(
+      2px 2px at 40px 60px,
+      #ccc,
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(2px 2px at 20px 50px, #999999, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 30px 100px, #eee, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 40px 60px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 110px 90px, #ccc, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 190px 150px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+
+  -webkit-animation-name: starfieldRotate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+#starfield > *:nth-child(1) {
+  -webkit-animation-duration: 18s;
+}
+#starfield > *:nth-child(2) {
+  -webkit-animation-duration: 22s;
+}
+#starfield > *:nth-child(3) {
+  -webkit-animation-duration: 36s;
+}
+#starfield > *:nth-child(4) {
+  -webkit-animation-duration: 40s;
+}
+
+@-webkit-keyframes starfieldRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#intro {
+  color: white;
+}
+
+#about {
+  grid-area: about;
+  display: grid;
+}
+
+/*@media only screen and (min-width: 500px) {
+  #about {
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+      'header   header'
+      'sidebar  content'
+      'sidebar2 sidebar2'
+      'footer   footer';
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #about {
+    grid-gap: 20px;
+    grid-template-columns: 120px auto 120px;
+    grid-template-areas:
+      'header  header  header'
+      'sidebar content sidebar2'
+      'footer  footer  footer';
+    max-width: 600px;
+  }
+}
+*/
+
+#projects {
+  grid-area: projects;
+}
+
+#contact {
+  grid-area: contact;
+}
