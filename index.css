@@ -10,20 +10,6 @@ html {
   font-family: 'Space Mono';
 }
 
-#email {
-  font-size: 15px;
-  position: fixed;
-  right: 5vw;
-  bottom: 30vh;
-  writing-mode: vertical-lr;
-  color: grey;
-  text-decoration: none;
-}
-
-#email:hover {
-  color: white;
-}
-
 #container {
   display: grid;
   grid-template-rows: 100vh 100vh 100vh 30vh;
@@ -138,20 +124,27 @@ html {
 }
 
 a {
-  cursor: pointer;
   margin: 5px;
   color: white;
   z-index: 1;
+  text-decoration: none;
 }
 
 ul {
   position: relative;
-  top: 30px;
+  top: 40px;
   bottom: 0;
 }
 
-#nav {
+.naver {
   display: inline;
+  margin: 30px;
+  color: grey;
+  z-index: 1;
+}
+
+.naver:hover {
+  color: white;
 }
 
 #about {
@@ -167,4 +160,18 @@ ul {
 #contact {
   grid-area: contact;
   background-color: red;
+}
+
+#email {
+  font-size: 15px;
+  position: fixed;
+  right: 5vw;
+  bottom: 30vh;
+  writing-mode: vertical-lr;
+  color: grey;
+  text-decoration: none;
+}
+
+#email:hover {
+  color: white;
 }
