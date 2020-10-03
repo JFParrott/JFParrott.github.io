@@ -12,6 +12,16 @@ html {
 
 #email {
   font-size: 15px;
+  position: fixed;
+  right: 5vw;
+  bottom: 30vh;
+  writing-mode: vertical-lr;
+  color: grey;
+  text-decoration: none;
+}
+
+#email:hover {
+  color: white;
 }
 
 #container {
