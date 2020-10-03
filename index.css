@@ -2,15 +2,21 @@ body,
 html {
   display: grid;
   width: 100vw;
-  height: 400vh;
+  height: 330vh;
   margin: 0px;
   padding: 0px;
   background-color: #000;
+  scroll-behavior: smooth;
+  font-family: 'Space Mono';
+}
+
+#email {
+  font-size: 15px;
 }
 
 #container {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 100vh 100vh 100vh 30vh;
   grid-template-areas:
     'landing-page'
     'about'
@@ -80,6 +86,11 @@ html {
   }
 }
 
+#intro {
+  text-align: center;
+  color: white;
+}
+
 .cssanimation,
 .cssanimation span {
   animation-duration: 1s;
@@ -100,11 +111,8 @@ html {
   }
 }
 
-#intro {
-  font-family: 'Space Mono';
-  text-align: center;
-  color: white;
-  overflow: hidden;
+.wording {
+  margin: 10px;
 }
 
 .social {
@@ -126,39 +134,27 @@ a {
   z-index: 1;
 }
 
+ul {
+  position: relative;
+  top: 30px;
+  bottom: 0;
+}
+
+#nav {
+  display: inline;
+}
+
 #about {
   grid-area: about;
-  display: grid;
+  background-color: green;
 }
 
-/*@media only screen and (min-width: 500px) {
-  #about {
-    grid-template-columns: 20% auto;
-    grid-template-areas:
-      'header   header'
-      'sidebar  content'
-      'sidebar2 sidebar2'
-      'footer   footer';
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  #about {
-    grid-gap: 20px;
-    grid-template-columns: 120px auto 120px;
-    grid-template-areas:
-      'header  header  header'
-      'sidebar content sidebar2'
-      'footer  footer  footer';
-    max-width: 600px;
-  }
-}
-*/
-
-#projects {
+#portfolio {
   grid-area: projects;
+  background-color: blue;
 }
 
 #contact {
   grid-area: contact;
+  background-color: red;
 }
