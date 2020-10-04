@@ -12,11 +12,12 @@ html {
 
 #container {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 100vh 100vh 100vh;
   grid-template-areas:
     'landing-page'
     'about'
-    'projects';
+    'projects'
+    'contact';
   border: 0px;
 }
 
@@ -27,12 +28,13 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
+  border-bottom: 1px solid #4d4d4d;
 }
 
 #starfield > * {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
@@ -147,53 +149,21 @@ ul {
 
 #about {
   grid-area: about;
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-}
-
-#about-container {
-  color: grey;
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-  margin: 90px 50px 20px 120px;
-  z-index: 1;
-}
-
-#about-container > h1 {
-  color: white;
-}
-
-#about-container > p {
-  font-family: 'arial';
-  font-size: 15px;
-  letter-spacing: 2px;
-  font-weight: 100;
-}
-
-#languages-container {
-  display: flex;
-  flex-direction: row;
-  margin: 40px 0 40px 0;
-  color: white;
-  font-size: 50px;
-}
-
-#tools-container {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  font-size: 50px;
-  margin: 0 0 40px 0;
+  background-color: green;
 }
 
 #portfolio {
   grid-area: projects;
+  background-color: blue;
+}
+
+#contact {
+  grid-area: contact;
+  background-color: red;
 }
 
 #email {
-  font-size: 12px;
+  font-size: 15px;
   position: fixed;
   right: 5vw;
   bottom: 30vh;
