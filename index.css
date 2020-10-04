@@ -2,7 +2,7 @@ body,
 html {
   display: grid;
   width: 100vw;
-  height: 300vh;
+  height: 330vh;
   margin: 0px;
   padding: 0px;
   background-color: #000;
@@ -12,7 +12,7 @@ html {
 
 #container {
   display: grid;
-  grid-template-rows: 100vh 100vh 100vh;
+  grid-template-rows: 100vh 100vh 100vh 30vh;
   grid-template-areas:
     'landing-page'
     'about'
