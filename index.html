@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
+    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/164cdd7350.js"
@@ -17,13 +23,13 @@
   </head>
   <body>
     <div id="container">
+      <div id="starfield">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div id="landing-page">
-        <div id="starfield">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
         <div id="intro">
           <h1 class="cssanimation sequence leRotateSkateInLeft wording">
             hello.
@@ -45,7 +51,7 @@
             </a>
             <a
               href="https://www.linkedin.com/in/jonathan-parrott-a14365178/"
-              title="Linked-In"
+              title="LinkedIn"
             >
               <i class="fab fa-linkedin-in fa-2x"></i>
             </a>
@@ -63,7 +69,39 @@
           </ul>
         </div>
       </div>
-      <div id="about">About</div>
+      <div id="about">
+        <!-- get data-aos animations to work after adding information, the scripts are commented out in <head> -->
+        <div id="about-container">
+          <h1>Phew, you made it.</h1>
+          <p>
+            I'm a Manchester based Full-Stack Developer currently studying at
+            Northcoders. <br /><br />
+            A love for both problem solving and creativity led me to this
+            ongoing journey of software and personal development. Frankly, I
+            can't get enough. <br /><br />
+            New challenges and experiences are my thing. <br /><br />
+            Simplicity is sexy.
+          </p>
+          <div id="languages-container">
+            <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
+            <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
+            <i class="devicon-javascript-plain" title="JavaScript"></i>
+            <i class="devicon-nodejs-plain" title="node.JS"></i>
+            <i class="devicon-python-plain" title="Python"></i>
+            <i class="devicon-react-original" title="React"></i>
+            <i class="devicon-postgresql-plain" title="postgreSQL"></i>
+          </div>
+          <div id="tools-container">
+            <i class="devicon-visualstudio-plain"></i>
+            <i class="devicon-github-plain"></i>
+            <i class="devicon-photoshop-line"></i>
+          </div>
+          <p>
+            Click <a href="#portfolio" id="portfolio-naver">here</a> to check
+            out my previous work.
+          </p>
+        </div>
+      </div>
       <div id="portfolio">Portfolio</div>
       <div>
         <a href="mailto:jonathanparrott@protonmail.com" id="email"
