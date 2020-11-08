@@ -13,9 +13,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
     />
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <script src="index.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/164cdd7350.js"
       crossorigin="anonymous"
@@ -75,8 +75,7 @@
         </div>
       </div>
       <div id="about">
-        <!-- get data-aos animations to work after adding information, the scripts are commented out in <head> -->
-        <div id="about-container">
+        <div id="about-container" data-aos="zoom-in">
           <h1>Phew, you made it.</h1>
           <p>
             I'm a Manchester based Full-Stack Developer currently studying at
@@ -97,9 +96,9 @@
             <i class="devicon-postgresql-plain" title="postgreSQL"></i>
           </div>
           <div id="tools-container">
-            <i class="devicon-visualstudio-plain"></i>
-            <i class="devicon-github-plain"></i>
-            <i class="devicon-photoshop-line"></i>
+            <i class="devicon-visualstudio-plain" title="VS Code"></i>
+            <i class="devicon-github-plain" title="GitHub"></i>
+            <i class="devicon-photoshop-line" title="Adobe Photoshop"></i>
           </div>
           <p>
             Click <a href="#portfolio" id="portfolio-naver">here</a>to check out
@@ -107,7 +106,46 @@
           </p>
         </div>
       </div>
-      <div id="portfolio">Portfolio</div>
+      <div id="portfolio">
+        <div>
+          <h3 id="projects-title">Recent work</h3>
+          <ul class="projects-list">
+            <li class="project-item">
+              <a
+                href="https://github.com/jonp2020/be-charity-bay"
+                class="project-tag"
+                >CharityBay</a
+              >
+            </li>
+            <li class="project-item">
+              <a href="https://github.com/JFParrott/nc-news" class="project-tag"
+                >JP News API</a
+              >
+            </li>
+            <li class="project-item">
+              <a
+                href="https://github.com/JFParrott/fe-nc-news"
+                class="project-tag"
+                >JP News Front End</a
+              >
+            </li>
+            <li class="project-item">
+              <a
+                href="https://github.com/JFParrott/travel-photos"
+                class="project-tag"
+                >Travel Photo API</a
+              >
+            </li>
+            <li class="project-item">
+              <a
+                href="https://github.com/JFParrott/typing-speed-tester"
+                class="project-tag"
+                >Typing Speed Tester</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
       <div>
         <a href="mailto:jonathanparrott@protonmail.com" id="email"
           >jonathanparrott@protonmail.com</a
